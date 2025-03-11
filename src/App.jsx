@@ -1,14 +1,11 @@
-
-import './App.css'
-import { Button } from './components/ui/button'
+import Navbar from './components/daynasor/Navbar'
 
 function App() {
 
 
   return (
     <>
-      <h1 className='text-2xl text-center'>Hello There!</h1>
-      <Button>Click me</Button>
+    <Navbar />
     </>
   )
 }
