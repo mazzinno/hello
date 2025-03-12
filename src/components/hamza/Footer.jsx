@@ -1,7 +1,16 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function Footer() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          once: true, 
+        });
+      }, []);
     return (
         <footer className="bg-gray-200 pt-12">
-            <div className="h-auto md:h-80 w-full p-6 flex flex-col md:flex-row justify-between max-w-[1200px] mx-auto gap-8 md:gap-0">
+            <div data-aos="fade-up" className="h-auto md:h-80 w-full p-6 flex flex-col md:flex-row justify-between max-w-[1200px] mx-auto gap-8 md:gap-0">
                 <div className="flex flex-col items-start">
                     <h2 className="text-3xl md:text-5xl font-bold">Hello.</h2>
                     <h4 className="text-sm md:text-base mt-2">

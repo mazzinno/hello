@@ -4,7 +4,9 @@ import { Monitor } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const projects = [
   {
     id: 1,
@@ -50,11 +52,16 @@ const projects = [
 
 const ProjectShowcase = () => {
   const [hoveredProject, setHoveredProject] = useState(null)
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true, 
+    });
+  }, []);
   return (
     <section className="py-20 px-4 md:px-6 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-100">
       <div className="container mx-auto max-w-6xl">
-        <div className="flex flex-col items-center text-center mb-16">
+        <div data-aos="fade-up" className="flex flex-col items-center text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">Nos réalisations</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Explore my portfolio of web development projects. Each project represents my passion for creating beautiful,
@@ -63,7 +70,7 @@ const ProjectShowcase = () => {
         </div>
 
         {/* Project Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <motion.div
               key={project.id}
@@ -107,7 +114,7 @@ const ProjectShowcase = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 text-center">
+        <div data-aos="fade-up" className="mt-16 text-center">
           <p className="text-muted-foreground mb-4">Interested in working together? Lets build something amazing.</p>
           <Button size="lg">Get In Touch</Button>
         </div>

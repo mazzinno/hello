@@ -3,8 +3,16 @@ import {
     CarouselContent,
     CarouselItem,
   } from "@/components/ui/carousel"
-
+  import AOS from "aos";
+  import "aos/dist/aos.css";
+  import { useEffect } from "react";
 function Section6() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          once: true, 
+        });
+      }, []);
     return (
         <section 
             className="w-full h-[600px] bg-cover bg-left" 
@@ -12,7 +20,7 @@ function Section6() {
         >
             <div className="max-w-[1200px] mx-auto px-4 h-full flex flex-col justify-between">
                 {/* Top Section */}
-                <div className="pt-12 text-left">
+                <div data-aos="fade-up" className="pt-12 text-left">
                     <h2 className="text-5xl font-bold text-white mb-4">Our Work</h2>
                     <p className="text-gray-200 max-w-[50ch]">
                         Explore our portfolio of successful projects that showcase our expertise in digital transformation.
@@ -20,7 +28,7 @@ function Section6() {
                 </div>
 
                 {/* Bottom Carousel */}
-                <div className="pb-12">
+                <div data-aos="fade-up" className="pb-12">
                     <Carousel
                         opts={{
                             align: "start",

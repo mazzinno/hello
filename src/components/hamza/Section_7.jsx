@@ -1,12 +1,21 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function Section7() {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,
+          once: true, 
+        });
+      }, []);
     return (
         <section className="w-full py-20 bg-white">
             <div className="max-w-[1200px] mx-auto px-4">
                 <div className="flex flex-col items-center text-center">
-                    <h2 className="text-4xl md:text-5xl font-bold max-w-[16ch] leading-tight mb-6">
+                    <h2 data-aos="fade-up" className="text-4xl md:text-5xl font-bold max-w-[16ch] leading-tight mb-6">
                         Transforming Ideas into Digital
                     </h2>
-                    <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                    <p data-aos="fade-up" className="text-gray-600 text-sm md:text-base leading-relaxed">
                         Our team of experts specializes in creating innovative solutions that drive business growth. 
                         We combine cutting-edge technology with creative design to deliver exceptional results. 
                         Let us help you turn your vision into a successful digital product.

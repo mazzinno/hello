@@ -1,3 +1,6 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
@@ -5,7 +8,12 @@ import { useState } from "react"
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true, 
+    });
+  }, []);
   // Mock data for partners
   const partners = [{ name: "Orange digital center" }, { name: "Webde.ma" }, { name: "Google" }, { name: "Green" }]
 
@@ -70,7 +78,7 @@ const Navbar = () => {
       <main className="container mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 relative z-10">
         <div className="flex px-6 flex-col lg:flex-row justify-between items-center">
           {/* Hero Text */}
-          <div className="lg:w-1/2">
+          <div data-aos="fade-up" className="lg:w-1/2">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-800 leading-tight mb-6 sm:mb-8">
               Recrutez-nous rapidement
             </h1>
@@ -82,6 +90,7 @@ const Navbar = () => {
 
           {/* Dashboard Card */}
           <DotLottieReact
+            data-aos="fade-up"
             src="src\assets\animation.json"
             loop
             autoplay
@@ -90,7 +99,7 @@ const Navbar = () => {
         </div>
 
         {/* Partners Section */}
-        <div className="mt-16 sm:mt-20 md:mt-24 text-center">
+        <div data-aos="fade-up" className="mt-16 sm:mt-20 md:mt-24 text-center">
           <p className="text-slate-600 mb-6 sm:mb-8">Nous avons déjà travaillé avec</p>
           <div className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-12 items-center">
             {partners.map((partner, index) => (
