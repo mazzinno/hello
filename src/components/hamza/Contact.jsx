@@ -1,6 +1,6 @@
 function Contact() {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-20 bg-white">
             <div className="max-w-[1200px] mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Left Section */}
@@ -61,4 +61,3 @@ function Contact() {
 }
 
 export default Contact;
-

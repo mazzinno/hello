@@ -1,6 +1,6 @@
 function Section7() {
     return (
-        <section className="w-full py-12 bg-white">
+        <section className="w-full py-20 bg-white">
             <div className="max-w-[1200px] mx-auto px-4">
                 <div className="flex flex-col items-center text-center">
                     <h2 className="text-4xl md:text-5xl font-bold max-w-[16ch] leading-tight mb-6">
