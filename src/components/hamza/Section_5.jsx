@@ -15,11 +15,11 @@ function Section5() {
                     {/* Mobile Text - Top */}
                     <div data-aos="fade-up" className="w-full md:hidden">
                         <h2 className="text-4xl font-bold mb-4 max-w-[20ch] leading-tight">
-                            Innovative Solutions for Modern Challenges
+                            Meet Our Expert Team
                         </h2>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                            We specialize in creating cutting-edge digital solutions that drive business growth. 
-                            Our team combines technical expertise with creative design to deliver exceptional results.
+                            Our team of seasoned professionals brings together diverse expertise in web development, 
+                            UI/UX design, and digital strategy to create impactful solutions for your business.
                         </p>
                     </div>
 
@@ -27,7 +27,7 @@ function Section5() {
                     <div data-aos="fade-up" className="w-full md:w-1/3">
                         <img 
                             src="https://placehold.co/400x300" 
-                            alt="Section 5" 
+                            alt="Our Team" 
                             className="w-full h-auto rounded-lg shadow-md"
                         />
                     </div>
@@ -35,11 +35,13 @@ function Section5() {
                     {/* Desktop Text - Right */}
                     <div data-aos="fade-up" className="hidden md:block w-full md:w-2/3">
                         <h2 className="text-4xl font-bold mb-4 max-w-[20ch] leading-tight">
-                            Innovative Solutions for Modern Challenges
+                            Meet Our Expert Team
                         </h2>
                         <p className="text-gray-600 text-base leading-relaxed">
-                            We specialize in creating cutting-edge digital solutions that drive business growth. 
-                            Our team combines technical expertise with creative design to deliver exceptional results.
+                            Our team of seasoned professionals brings together diverse expertise in web development, 
+                            UI/UX design, and digital strategy to create impactful solutions for your business. 
+                            With years of experience across various industries, we're committed to delivering 
+                            innovative and tailored solutions that drive real results.
                         </p>
                     </div>
                 </div>

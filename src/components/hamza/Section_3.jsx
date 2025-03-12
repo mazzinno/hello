@@ -17,11 +17,10 @@ function Section3() {
                     {/* Left Section - Text Content */}
                     <div data-aos="fade-up" className="w-full md:w-2/3">
                         <h2 className="text-4xl md:text-4xl font-bold mb-4 max-w-[20ch] leading-tight">
-                            Innovative Solutions for Modern Challenges
+                            Our Mission: Empowering Digital Transformation
                         </h2>
                         <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                            We specialize in creating cutting-edge digital solutions that drive business growth. 
-                            Our team combines technical expertise with creative design to deliver exceptional results.
+                            At our core, we're driven by a mission to revolutionize the digital landscape. We empower businesses to thrive in the digital age by crafting innovative web solutions that combine cutting-edge technology with user-centric design. Our vision is to be the catalyst for digital transformation, helping businesses unlock their full potential through bespoke web development services.
                         </p>
                     </div>
 
@@ -29,7 +28,7 @@ function Section3() {
                     <div data-aos="fade-up" className="w-full md:w-1/3">
                         <img 
                             src="https://placehold.co/400x300" 
-                            alt="Section 5" 
+                            alt="Digital Transformation Illustration" 
                             className="w-full h-auto rounded-lg shadow-md"
                         />
                     </div>
