@@ -1,11 +1,15 @@
-import Navbar from './components/daynasor/Navbar'
+import Dashboard from './components/daynasor/Dashboard'
+import Second from './components/daynasor/Second'
+import ProjectShowcase from './components/daynasor/Projects'
 
 function App() {
 
 
   return (
     <>
-    <Navbar />
+      <Dashboard />
+      <ProjectShowcase />
+      <Second />
     </>
   )
 }
