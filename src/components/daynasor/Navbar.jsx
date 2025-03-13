@@ -1,16 +1,32 @@
 import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
-      <nav className="flex justify-between items-center py-4 px-4 sm:px-6 md:px-8 relative z-10">
+      <nav className={`flex justify-between items-center py-4 px-4 sm:px-6 md:px-8 fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
+        isScrolled ? 'bg-white/80 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+      }`}>
         <div className="flex items-center">
           <div className="bg-blue-500 w-8 h-8 rounded mr-2"></div>
-          <span className="text-slate-800 font-semibold text-xl">Clearbit</span>
+          <span className="text-slate-800 font-semibold text-xl">DevFutur</span>
         </div>
 
         {/* Mobile menu button */}
@@ -45,6 +61,9 @@ const Navbar = () => {
           </Button>
         </div>
       </nav>
+
+      {/* Add padding to the top of the page to prevent content from being hidden */}
+      <div className="h-20" />
 
       {/* Mobile menu dropdown */}
       {mobileMenuOpen && (

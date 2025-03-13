@@ -18,7 +18,7 @@ const Dashboard = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-100 relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden">
       {/* Background gradient overlay */}
       <div className="absolute top-0 right-0 w-3/4 h-full bg-gradient-to-br from-purple-100/20 to-indigo-200/30 -z-10"></div>
       
@@ -27,11 +27,14 @@ const Dashboard = () => {
         <div className="flex px-6 flex-col lg:flex-row justify-between items-center">
           {/* Hero Text */}
           <div data-aos="fade-up" className="lg:w-1/2">
-            <h1 className="text-4xl sm:text-6xl md:text-6xl font-bold text-slate-800 leading-tight mb-6 sm:mb-8">
-              Recrutez-nous rapidement
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-800 leading-tight mb-4 sm:mb-8">
+              Solutions Techniques Sur Mesure
             </h1>
+            <p className="text-3xl sm:text-3xl md:text-3xl text-slate-600 max-w-xl mb-4 sm:mb-10">
+            Notre équipe d&apos;experts transforme vos idées en solutions digitales performantes
+            </p>
             <p className="text-base sm:text-lg text-slate-600 max-w-xl mb-8 sm:mb-10">
-              et lancez votre projet en un rien de temps.
+            De l&apos;idée au produit, rapidement
             </p>
             <Button className="bg-indigo-700 hover:bg-indigo-800 text-white px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg w-full sm:w-auto">Contactez-nous</Button>
           </div>

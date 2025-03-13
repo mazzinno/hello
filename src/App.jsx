@@ -10,7 +10,7 @@ import Footer from './components/hamza/Footer'
 
 function App() {
   return (
-    <>
+    <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-100">
       <Navbar />
       <Dashboard />
       <Second />
@@ -20,7 +20,7 @@ function App() {
       <Section7 />
       <Contact />
       <Footer />
-    </>
+    </div>
   )
 }
 

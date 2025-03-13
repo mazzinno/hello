@@ -11,7 +11,7 @@ const Second = () => {
   }, []);
 
   return (
-    <section className="w-full py-3 md:py-24 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-100">
+    <section className="w-full py-3 md:py-24">
       <div className="container px-4 md:px-6 mx-auto max-w-6xl">
       <h1 data-aos="fade-up" className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-8 text-center">
         Comment nous travaillons
