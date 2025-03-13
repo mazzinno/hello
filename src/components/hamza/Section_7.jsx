@@ -12,7 +12,7 @@ function Section7() {
         <section className="w-full py-20 bg-white">
             <div className="max-w-[1200px] mx-auto px-4">
                 <div className="flex flex-col items-center text-center">
-                    <h2 data-aos="fade-up" className="text-4xl md:text-5xl font-bold max-w-[16ch] leading-tight mb-6">
+                    <h2 data-aos="fade-up" className="text-4xl md:text-5xl font-bold max-w-[20ch] leading-tight mb-6">
                         Transformer les Idées en Numérique
                     </h2>
                     <p data-aos="fade-up" className="text-gray-600 text-sm md:text-base leading-relaxed">

@@ -16,8 +16,8 @@ function Section3() {
                 <div className="flex flex-col md:flex-row gap-12 items-center">
                     {/* Left Section - Text Content */}
                     <div data-aos="fade-up" className="w-full md:w-2/3">
-                        <h2 className="text-4xl md:text-4xl font-bold mb-4 max-w-[20ch] leading-tight">
-                            Notre Mission : Accélérer la Transformation Numérique
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 max-w-[30ch] leading-tight">
+                            Accélérer la Transformation Numérique
                         </h2>
                         <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                             Au cœur de notre action, nous sommes animés par une mission : révolutionner le paysage numérique. Nous permettons aux entreprises de prospérer à l'ère digitale en créant des solutions web innovantes qui allient technologie de pointe et design centré sur l'utilisateur. Notre vision est d'être le catalyseur de la transformation numérique, aidant les entreprises à libérer leur plein potentiel grâce à des services de développement web sur mesure.

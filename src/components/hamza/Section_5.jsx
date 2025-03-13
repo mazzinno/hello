@@ -34,7 +34,7 @@ function Section5() {
 
                     {/* Desktop Text - Right */}
                     <div data-aos="fade-up" className="hidden md:block w-full md:w-2/3">
-                        <h2 className="text-4xl font-bold mb-4 max-w-[20ch] leading-tight">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-4 max-w-[20ch] leading-tight">
                             Rencontrez Notre Équipe d'Experts
                         </h2>
                         <p className="text-gray-600 text-base leading-relaxed">
