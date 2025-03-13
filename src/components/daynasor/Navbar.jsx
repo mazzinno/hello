@@ -54,6 +54,9 @@ const Navbar = () => {
           <div className="flex items-center font-semibold text-slate-700 cursor-pointer">
             Projets
           </div>
+          <div onClick={() => navigate('/about')} className="flex items-center font-semibold text-slate-700 cursor-pointer">
+            À propos
+          </div>
         </div>
 
         <div className="hidden md:flex items-center">
@@ -79,6 +82,7 @@ const Navbar = () => {
             </div>
             <div className="text-slate-700 cursor-pointer">Notre Fonctionnement</div>
             <div className="text-slate-700 cursor-pointer">Projets</div>
+            <div onClick={() => navigate('/about')} className="text-slate-700 cursor-pointer">À propos</div>
             <Button 
               variant="outline" 
               className="text-white bg-gradient-to-r from-indigo-500 to-purple-500 border-transparent shadow-lg w-full hover:from-indigo-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-indigo-500/50"

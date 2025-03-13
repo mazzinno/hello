@@ -7,8 +7,13 @@ import Section6 from './hamza/Section_6'
 import Section7 from './hamza/Section_7'  
 import Contact from './hamza/Contact'
 import Footer from './hamza/Footer'
-
+import Section8 from './hamza/Section_8'
+import { useEffect } from 'react'
 const Homepage = () => {
+  useEffect(() => {
+    // Scroll to top on component mount
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-100">
       <Navbar />
@@ -18,6 +23,7 @@ const Homepage = () => {
       <Section5 />
       <Section6 />
       <Section7 />
+      <Section8 />
       <Contact />
       <Footer />
     </div>

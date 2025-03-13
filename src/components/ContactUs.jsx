@@ -1,4 +1,6 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Navbar from "./daynasor/Navbar"
 import { Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -8,6 +10,16 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Card } from "@/components/ui/card"
 
 const ContactUs = () => {
+  useEffect(() => {
+    // Scroll to top on component mount
+    window.scrollTo(0, 0);
+    
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -33,7 +45,7 @@ const ContactUs = () => {
           <div className="absolute left-0 top-1/4 w-32 h-32 rounded-full bg-orange-300 -z-10 hidden md:block"></div>
 
           {/* Contact form */}
-          <Card className="w-full lg:w-1/2 p-8 shadow-lg">
+          <Card data-aos="fade-right" className="w-full lg:w-1/2 p-8 shadow-lg">
             <div className="space-y-6">
               <div>
                 <h1 className="text-3xl font-bold text-slate-800 mb-4">Travaillons ensemble</h1>
@@ -104,7 +116,7 @@ const ContactUs = () => {
           </Card>
 
           {/* Benefits and FAQ section */}
-          <div className="w-full lg:w-1/2 p-4 space-y-8">
+          <div data-aos="fade-left" className="w-full lg:w-1/2 p-4 space-y-8">
             <div className="space-y-6">
               <h2 className="text-2xl font-bold text-slate-800">En travaillant avec moi, vous obtiendrez :</h2>
 
