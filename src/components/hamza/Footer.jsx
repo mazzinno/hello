@@ -1,7 +1,10 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
 function Footer() {
+    const navigate = useNavigate()
     useEffect(() => {
         AOS.init({
           duration: 1000,
@@ -19,9 +22,9 @@ function Footer() {
                 </div>
                 <div className="flex flex-col justify-end">
                     <div className="flex flex-col md:flex-row gap-4 text-sm md:text-base">
-                        <p className="hover:text-gray-600 cursor-pointer">Accueil</p>
-                        <p className="hover:text-gray-600 cursor-pointer">À propos</p>
-                        <p className="hover:text-gray-600 cursor-pointer">Contact</p>
+                        <p className="hover:text-gray-600 cursor-pointer" onClick={() => navigate('/')}>Accueil</p>
+                        <p className="hover:text-gray-600 cursor-pointer" onClick={() => navigate('/about')}>À propos</p>
+                        <p className="hover:text-gray-600 cursor-pointer" onClick={() => navigate('/contact')}>Contact</p>
                     </div>
                 </div>
             </div>

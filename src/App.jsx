@@ -1,27 +1,16 @@
-import Navbar from './components/daynasor/Navbar'
-import Dashboard from './components/daynasor/Dashboard'
-import Second from './components/daynasor/Second'
-import Section3 from './components/hamza/Section_3'
-import Section5 from './components/hamza/Section_5'
-import Section6 from './components/hamza/Section_6'
-import Section7 from './components/hamza/Section_7'
-import Contact from './components/hamza/Contact'
-import Footer from './components/hamza/Footer'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Homepage from './components/Homepage';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
-    <div className="bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-100">
-      <Navbar />
-      <Dashboard />
-      <Second />
-      <Section3 />
-      <Section5 />
-      <Section6 />
-      <Section7 />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/contact" element={<ContactUs />} />
+      </Routes>
+    </Router>
   )
 }
 
-export default App
+export default App;

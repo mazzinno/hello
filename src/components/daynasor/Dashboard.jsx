@@ -3,8 +3,10 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button"
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { useNavigate } from "react-router-dom"
 
 const Dashboard = () => {
+  const navigate = useNavigate()
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -36,7 +38,12 @@ const Dashboard = () => {
             <p className="text-base sm:text-lg text-slate-600 max-w-xl mb-8 sm:mb-10">
             De l&apos;idée au produit, rapidement
             </p>
-            <Button className="bg-indigo-700 hover:bg-indigo-800 text-white px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg w-full sm:w-auto">Contactez-nous</Button>
+            <Button 
+              className="bg-indigo-700 hover:bg-indigo-800 text-white px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg w-full sm:w-auto"
+              onClick={() => navigate('/contact')}
+            >
+              Contactez-nous
+            </Button>
           </div>
 
           {/* Dashboard Card */}

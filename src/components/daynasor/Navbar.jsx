@@ -1,10 +1,12 @@
 import { ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState, useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +23,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`flex justify-between items-center py-4 px-4 sm:px-6 md:px-8 fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
+      <nav className={`flex justify-between items-center py-6 px-4 sm:px-6 md:px-8 fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
         isScrolled ? 'bg-white/80 backdrop-blur-sm shadow-sm' : 'bg-transparent'
       }`}>
         <div className="flex items-center">
@@ -43,7 +45,9 @@ const Navbar = () => {
 
         {/* Desktop menu */}
         <div className="hidden md:flex space-x-6 lg:space-x-8">
-          <div className="flex items-center font-semibold text-slate-700 cursor-pointer">
+          <div 
+          onClick={() => navigate('/')}
+          className="flex items-center font-semibold text-slate-700 cursor-pointer" >
             Home
           </div>
           <div className="font-semibold text-slate-700 cursor-pointer">Notre Fonctionnement</div>
@@ -55,7 +59,8 @@ const Navbar = () => {
         <div className="hidden md:flex items-center">
           <Button 
             variant="outline" 
-            className="font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-500 border-transparent shadow-lg hover:from-indigo-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-indigo-500/50"
+            onClick={() => navigate('/contact')}
+            className="font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-500 border-transparent shadow-lg hover:from-indigo-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-indigo-500/50 px-6 py-4 text-lg"
           >
             Contactez-nous
           </Button>
