@@ -21,9 +21,9 @@ function Section6() {
             <div className="max-w-[1200px] mx-auto px-4 h-full flex flex-col justify-between">
                 {/* Top Section */}
                 <div data-aos="fade-up" className="pt-12 text-left">
-                    <h2 className="text-5xl font-bold text-white mb-4">Our Work</h2>
+                    <h2 className="text-5xl font-bold text-white mb-4">Nos Réalisations</h2>
                     <p className="text-gray-200 max-w-[50ch]">
-                        Explore our portfolio of successful projects that showcase our expertise in digital transformation.
+                        Découvrez notre portfolio de projets réussis qui mettent en valeur notre expertise en transformation numérique.
                     </p>
                 </div>
 

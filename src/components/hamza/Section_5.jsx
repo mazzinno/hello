@@ -15,11 +15,11 @@ function Section5() {
                     {/* Mobile Text - Top */}
                     <div data-aos="fade-up" className="w-full md:hidden">
                         <h2 className="text-4xl font-bold mb-4 max-w-[20ch] leading-tight">
-                            Meet Our Expert Team
+                            Rencontrez Notre Équipe d'Experts
                         </h2>
                         <p className="text-gray-600 text-sm leading-relaxed">
-                            Our team of seasoned professionals brings together diverse expertise in web development, 
-                            UI/UX design, and digital strategy to create impactful solutions for your business.
+                            Notre équipe de professionnels chevronnés réunit une expertise diversifiée en développement web,
+                            design UI/UX et stratégie numérique pour créer des solutions impactantes pour votre entreprise.
                         </p>
                     </div>
 
@@ -27,7 +27,7 @@ function Section5() {
                     <div data-aos="fade-up" className="w-full md:w-1/3">
                         <img 
                             src="https://placehold.co/400x300" 
-                            alt="Our Team" 
+                            alt="Notre Équipe" 
                             className="w-full h-auto rounded-lg shadow-md"
                         />
                     </div>
@@ -35,13 +35,13 @@ function Section5() {
                     {/* Desktop Text - Right */}
                     <div data-aos="fade-up" className="hidden md:block w-full md:w-2/3">
                         <h2 className="text-4xl font-bold mb-4 max-w-[20ch] leading-tight">
-                            Meet Our Expert Team
+                            Rencontrez Notre Équipe d'Experts
                         </h2>
                         <p className="text-gray-600 text-base leading-relaxed">
-                            Our team of seasoned professionals brings together diverse expertise in web development, 
-                            UI/UX design, and digital strategy to create impactful solutions for your business. 
-                            With years of experience across various industries, we're committed to delivering 
-                            innovative and tailored solutions that drive real results.
+                            Notre équipe de professionnels expérimentés combine une expertise diversifiée en développement web,
+                            design UI/UX et stratégie numérique pour créer des solutions percutantes pour votre entreprise.
+                            Avec des années d'expérience dans divers secteurs, nous nous engageons à fournir des solutions
+                            innovantes et sur mesure qui génèrent des résultats concrets.
                         </p>
                     </div>
                 </div>

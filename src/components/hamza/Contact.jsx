@@ -15,14 +15,14 @@ function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Left Section */}
                     <div data-aos="fade-up" className="text-left">
-                        <h2 className="text-3xl font-bold text-gray-800 mb-6">Contact Us</h2>
+                        <h2 className="text-3xl font-bold text-gray-800 mb-6">Contactez-nous</h2>
                         <form className="flex flex-col gap-4">
                             <div>
                                 <input 
                                     type="text" 
                                     id="name" 
                                     className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
-                                    placeholder="Your name"
+                                    placeholder="Votre nom"
                                 />
                             </div>
                             <div>
@@ -30,7 +30,7 @@ function Contact() {
                                     type="email" 
                                     id="email" 
                                     className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
-                                    placeholder="Your email"
+                                    placeholder="Votre email"
                                 />
                             </div>
                             <div>
@@ -38,14 +38,14 @@ function Contact() {
                                     id="message" 
                                     className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
                                     rows="4"
-                                    placeholder="Your message"
+                                    placeholder="Votre message"
                                 ></textarea>
                             </div>
                             <button 
                                 type="submit"
                                 className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors self-start"
                             >
-                                Submit
+                                Envoyer
                             </button>
                         </form>
                     </div>

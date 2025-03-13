@@ -13,12 +13,12 @@ function Section7() {
             <div className="max-w-[1200px] mx-auto px-4">
                 <div className="flex flex-col items-center text-center">
                     <h2 data-aos="fade-up" className="text-4xl md:text-5xl font-bold max-w-[16ch] leading-tight mb-6">
-                        Transforming Ideas into Digital
+                        Transformer les Idées en Numérique
                     </h2>
                     <p data-aos="fade-up" className="text-gray-600 text-sm md:text-base leading-relaxed">
-                        Our team of experts specializes in creating innovative solutions that drive business growth. 
-                        We combine cutting-edge technology with creative design to deliver exceptional results. 
-                        Let us help you turn your vision into a successful digital product.
+                        Notre équipe d'experts se spécialise dans la création de solutions innovantes qui stimulent la croissance des entreprises.
+                        Nous combinons une technologie de pointe avec un design créatif pour offrir des résultats exceptionnels.
+                        Laissez-nous vous aider à transformer votre vision en un produit numérique réussi.
                     </p>
                 </div>
             </div>
