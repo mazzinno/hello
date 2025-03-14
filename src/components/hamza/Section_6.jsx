@@ -15,10 +15,11 @@ function Section6() {
       }, []);
     return (
         <section 
-            className="w-full h-[600px] bg-cover bg-left" 
-            style={{ backgroundImage: "url('https://placehold.co/1200x600')" }}
+            className="w-full h-[600px] bg-cover bg-left relative" 
+            style={{ backgroundImage: "url('src/assets/developers.jpg')" }}
         >
-            <div className="max-w-[1200px] mx-auto px-4 h-full flex flex-col justify-between">
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>
+            <div className="max-w-[1200px] mx-auto px-4 h-full flex flex-col justify-between relative">
                 {/* Top Section */}
                 <div data-aos="fade-up" className="pt-12 text-left">
                     <h2 className="text-5xl font-bold text-white mb-4">Nos Réalisations</h2>
@@ -36,12 +37,28 @@ function Section6() {
                         }}
                     >
                         <CarouselContent>
-                            {[...Array(7)].map((_, i) => (
+                            {[
+                                { img: "src/assets/projects/groupetoy.png", link: "https://groupetoy.com/" },
+                                { img: "src/assets/projects/agriobentions.png", link: "https://www.agriobtentions.fr/" },
+                                { img: "src/assets/projects/agrisanterre.png", link: "https://www.agrisanterre.com/" },
+                                { img: "src/assets/projects/bertinaminel.png", link: "https://www.bertinaminel-architecture.com/" },
+                                { img: "src/assets/projects/createursdintereur.png", link: "https://www.createursdinterieur.com/" },
+                                { img: "src/assets/projects/hddesign.png", link: "https://www.hddesign.fr/" },
+                                { img: "src/assets/projects/hydralians.png", link: "https://www.hydralians.fr/" }
+                            ].map((project, i) => (
                                 <CarouselItem key={i} className="basis-[80%] sm:basis-[60%] md:basis-[30%]">
-                                    <div 
-                                        className="h-36 w-full bg-white rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out"
-                                        style={{ backgroundImage: "url('https://placehold.co/344x144')" }}
-                                    />
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                        <div 
+                                            className="w-full bg-black rounded-lg shadow-md hover:scale-105 transition-transform duration-300 ease-in-out overflow-hidden"
+                                            style={{ aspectRatio: '16/9' }}
+                                        >
+                                            <img
+                                                src={project.img}
+                                                alt="Project"
+                                                className="w-full h-full object-cover object-top"
+                                            />
+                                        </div>
+                                    </a>
                                 </CarouselItem>
                             ))}
                         </CarouselContent>

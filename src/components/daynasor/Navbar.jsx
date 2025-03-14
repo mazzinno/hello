@@ -27,8 +27,7 @@ const Navbar = () => {
         isScrolled ? 'bg-white/80 backdrop-blur-sm shadow-sm' : 'bg-transparent'
       }`}>
         <div className="flex items-center">
-          <div className="bg-blue-500 w-8 h-8 rounded mr-2"></div>
-          <span className="text-slate-800 font-semibold text-xl">DevFutur</span>
+          <span className="text-slate-800 font-semibold text-2xl"><span className="text-blue-500">Dev</span>Futur.</span>
         </div>
 
         {/* Mobile menu button */}

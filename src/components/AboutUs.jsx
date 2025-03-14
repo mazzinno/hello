@@ -50,9 +50,9 @@ const AboutUs = () => {
             </div>
             <div data-aos="fade-left">
               <img 
-                src="https://placehold.co/600x400" 
+                src="src/assets/team.jpg" 
                 alt="Notre équipe" 
-                className="rounded-lg shadow-md"
+                className="rounded-lg shadow-md w-[600px] h-[400px] object-cover"
               />
             </div>
           </div>

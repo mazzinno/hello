@@ -25,11 +25,10 @@ function Section5() {
 
                     {/* Left Section - Image */}
                     <div data-aos="fade-up" className="w-full md:w-1/3">
-                        <img 
-                            src="https://placehold.co/400x300" 
-                            alt="Notre Équipe" 
-                            className="w-full h-auto rounded-lg shadow-md"
-                        />
+                        <div 
+                            className="w-full h-[250px] bg-cover bg-center rounded-lg shadow-md"
+                            style={{ backgroundImage: "url('src/assets/teaaam.png')" }}
+                        ></div>
                     </div>
 
                     {/* Desktop Text - Right */}

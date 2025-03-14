@@ -33,23 +33,26 @@ const Section_8 = () => {
         </div>
 
         {/* Big container with rounded corners */}
-        <div className="bg-[url('https://placehold.co/400x300')] bg-cover bg-center p-8 md:p-12 rounded-2xl flex flex-col md:flex-row gap-8 min-h-[400px]">
-          {/* Left side - Big description */}
-          <div className="md:w-1/2 flex flex-col justify-center">
-            <h3 className="text-2xl font-bold text-slate-800 mb-4">
-              Pourquoi nous choisir ?
-            </h3>
-            <p className="text-slate-600 text-lg leading-relaxed">
-              Avec une combinaison unique d'expertise technique, de créativité et de compréhension des affaires, nous transformons les idées en solutions numériques performantes.
-            </p>
-          </div>
-
-          {/* Right side - Logo */}
-          <div className="md:w-1/2 flex items-center justify-center">
-            <div className="bg-blue-500 w-20 h-20 rounded-lg flex items-center justify-center">
-              <span className="text-white text-2xl font-bold">DF</span>
+        <div 
+            className="bg-[url('src/assets/agadir.jpg')] bg-cover bg-center p-8 md:p-12 rounded-2xl flex flex-col md:flex-row gap-8 min-h-[400px] relative"
+        >
+            {/* Dark overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 rounded-2xl"></div>
+            
+            {/* Left side - Big description */}
+            <div className="md:w-1/2 flex flex-col justify-center relative z-10">
+                <h3 className="text-2xl font-bold text-white mb-4">
+                    Pourquoi nous choisir ?
+                </h3>
+                <p className="text-white text-lg leading-relaxed">
+                    Avec une combinaison unique d'expertise technique, de créativité et de compréhension des affaires, nous transformons les idées en solutions numériques performantes.
+                </p>
             </div>
-          </div>
+
+            {/* Right side - Logo */}
+            <div className="md:w-1/2 flex items-center justify-center relative z-10">
+                <span className="text-white font-semibold text-5xl"><span className="text-blue-500">Dev</span>Futur.</span>
+            </div>
         </div>
       </div>
     </section>
