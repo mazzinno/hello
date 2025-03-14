@@ -9,7 +9,7 @@ function Section7() {
         });
       }, []);
     return (
-        <section className="w-full py-20 bg-white">
+        <section className="w-full py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-100">
             <div className="max-w-[1200px] mx-auto px-4">
                 <div className="flex flex-col items-center text-center">
                     <h2 data-aos="fade-up" className="text-4xl md:text-5xl font-bold max-w-[20ch] leading-tight mb-6">

@@ -1,7 +1,7 @@
 const Section_8 = () => {
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="w-full py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-100">
+      <div className="max-w-[1200px] mx-auto px-4">
         {/* Big title on the left */}
         <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-8">
           Notre Approche Unique
@@ -15,17 +15,17 @@ const Section_8 = () => {
               Nous croyons en une approche holistique du développement web, combinant design, technologie et stratégie pour créer des solutions qui dépassent les attentes.
             </p>
             <p className="text-slate-600 text-lg leading-relaxed">
-              Notre processus est conçu pour maximiser l'impact tout en minimisant les risques, garantissant des résultats tangibles pour nos clients.
+              Notre processus est conçu pour maximiser l&apos;impact tout en minimisant les risques, garantissant des résultats tangibles pour nos clients.
             </p>
           </div>
 
           {/* Right side - Divided into two */}
           <div className="grid grid-cols-2 gap-6">
-            <div className="bg-blue-50 p-6 rounded-lg">
+            <div className="bg-purple-200 p-6 rounded-lg">
               <h3 className="text-xl font-bold text-slate-800 mb-3">+50 Projets</h3>
               <p className="text-slate-600">Réalisés avec succès pour nos clients</p>
             </div>
-            <div className="bg-purple-50 p-6 rounded-lg">
+            <div className="bg-blue-200 p-6 rounded-lg">
               <h3 className="text-xl font-bold text-slate-800 mb-3">95% Satisfaction</h3>
               <p className="text-slate-600">Taux de satisfaction client</p>
             </div>
@@ -45,7 +45,7 @@ const Section_8 = () => {
                     Pourquoi nous choisir ?
                 </h3>
                 <p className="text-white text-lg leading-relaxed">
-                    Avec une combinaison unique d'expertise technique, de créativité et de compréhension des affaires, nous transformons les idées en solutions numériques performantes.
+                    Avec une combinaison unique d&apos;expertise technique, de créativité et de compréhension des affaires, nous transformons les idées en solutions numériques performantes.
                 </p>
             </div>
 

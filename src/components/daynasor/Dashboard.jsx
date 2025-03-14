@@ -39,7 +39,7 @@ const Dashboard = () => {
             De l&apos;idée au produit, rapidement
             </p>
             <Button 
-              className="bg-indigo-700 hover:bg-indigo-800 text-white px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg w-full sm:w-auto"
+              className="font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-500 border-transparent shadow-lg hover:from-indigo-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-indigo-500/50 px-9 py-7 text-lg w-full sm:w-auto"
               onClick={() => navigate('/contact')}
             >
               Contactez-nous

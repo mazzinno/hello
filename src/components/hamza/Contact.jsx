@@ -1,6 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
 
 function Contact() {
     const [errors, setErrors] = useState({});
@@ -76,7 +77,7 @@ function Contact() {
     };
 
     return (
-        <section className="w-full py-20 bg-white">
+        <section className="w-full py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-100">
             <div className="max-w-[1200px] mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Left Section */}
@@ -93,6 +94,17 @@ function Contact() {
                                     placeholder="Votre nom"
                                 />
                                 {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+                            </div>
+                            <div>
+                                <input 
+                                    type="text" 
+                                    name="phone"
+                                    className={`w-full p-2 border ${
+                                        errors.phone ? 'border-red-500' : 'border-gray-300'
+                                    } rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all`}
+                                    placeholder="Votre numéro de téléphone"
+                                />
+                                {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
                             </div>
                             <div>
                                 <input 
@@ -116,15 +128,12 @@ function Contact() {
                                 ></textarea>
                                 {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
                             </div>
-                            <button 
-                                type="submit"
-                                disabled={isSubmitting}
-                                className={`px-6 py-2 ${
-                                    isSubmitting ? 'bg-blue-300' : 'bg-blue-500'
-                                } text-white rounded-lg hover:bg-blue-600 transition-colors self-start`}
+                            <Button 
+                              type="submit" 
+                              className="font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-500 border-transparent shadow-lg hover:from-indigo-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-indigo-500/50 px-6 py-4 text-lg"
                             >
-                                {isSubmitting ? 'Envoi en cours...' : 'Envoyer'}
-                            </button>
+                              Soumettre le formulaire
+                            </Button>
                         </form>
                     </div>
 

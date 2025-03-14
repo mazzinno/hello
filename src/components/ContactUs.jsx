@@ -24,6 +24,7 @@ const ContactUs = () => {
     name: "",
     email: "",
     message: "",
+    phone: "",
   })
 
   const handleChange = (e) => {
@@ -50,7 +51,7 @@ const ContactUs = () => {
               <div>
                 <h1 className="text-3xl font-bold text-slate-800 mb-4">Travaillons ensemble</h1>
                 <p className="text-slate-600">
-                  Merci de ne pas me contacter si vous vendez des liens, je ne suis pas intéressé et vous ne recevrez pas de réponse.
+                Merci de partager les détails de votre projet ci-dessous. Notre équipe est prête à transformer votre vision digitale en réalité.
                 </p>
               </div>
 
@@ -64,7 +65,23 @@ const ContactUs = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Jean Dupont"
+                    placeholder="Nom et Prénom"
+                    required
+                    className="w-full bg-slate-50"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="phone" className="block text-slate-600">
+                    Numéro de téléphone<span className="text-orange-500">*</span>
+                  </label>
+                  <Input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    placeholder="Votre numéro de téléphone"
                     required
                     className="w-full bg-slate-50"
                   />
@@ -80,7 +97,7 @@ const ContactUs = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="jean@dupont.com"
+                    placeholder="votre email"
                     required
                     className="w-full bg-slate-50"
                   />
@@ -96,18 +113,18 @@ const ContactUs = () => {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Parlez-moi de votre site, des exigences du projet et de la date de début souhaitée."
+                      placeholder="Parlez-nous de votre site, des exigences du projet et de la date de début souhaitée."
                       required
                       className="min-h-32 w-full bg-slate-50"
                     />
-                    <div className="text-xs text-slate-500 mt-1">
-                      Votre situation actuelle, où vous voulez être et ce dont vous avez besoin pour y arriver
-                    </div>
                   </div>
                 </div>
 
                 <div className="pt-4">
-                  <Button type="submit" className="bg-orange-400 hover:bg-orange-500 text-white rounded-full px-6">
+                  <Button 
+                    type="submit" 
+                    className="font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-500 border-transparent shadow-lg hover:from-indigo-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-indigo-500/50 px-6 py-4 text-lg"
+                  >
                     Soumettre le formulaire
                   </Button>
                 </div>
@@ -118,29 +135,36 @@ const ContactUs = () => {
           {/* Benefits and FAQ section */}
           <div data-aos="fade-left" className="w-full lg:w-1/2 p-4 space-y-8">
             <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-slate-800">En travaillant avec moi, vous obtiendrez :</h2>
+              <h2 className="text-2xl font-bold text-slate-800">En travaillant avec nous, vous obtiendrez :</h2>
 
               <div className="space-y-4">
                 <div className="flex items-start gap-2">
                   <div className="mt-1 flex-shrink-0 rounded-full bg-orange-100 p-1">
                     <Check className="h-4 w-4 text-orange-500" />
                   </div>
-                  <p className="text-slate-700">Un expert SEO avec une expérience de niveau entreprise</p>
+                  <p className="text-slate-700">Une expertise technique avec une expérience éprouvée dans l&apos;industrie</p>
                 </div>
 
                 <div className="flex items-start gap-2">
                   <div className="mt-1 flex-shrink-0 rounded-full bg-orange-100 p-1">
                     <Check className="h-4 w-4 text-orange-500" />
                   </div>
-                  <p className="text-slate-700">Des instructions claires et concises pour augmenter votre trafic organique</p>
+                  <p className="text-slate-700">Une feuille de route de développement claire et un calendrier transparent</p>
                 </div>
 
                 <div className="flex items-start gap-2">
                   <div className="mt-1 flex-shrink-0 rounded-full bg-orange-100 p-1">
                     <Check className="h-4 w-4 text-orange-500" />
                   </div>
-                  <p className="text-slate-700">Un expert SEO polyvalent avec de l'expérience en UX, CRO, design et développement</p>
+                  <p className="text-slate-700">Des solutions personnalisées adaptées aux besoins spécifiques de votre entreprise</p>
                 </div>
+                <div className="flex items-start gap-2">
+                  <div className="mt-1 flex-shrink-0 rounded-full bg-orange-100 p-1">
+                    <Check className="h-4 w-4 text-orange-500" />
+                  </div>
+                  <p className="text-slate-700">Un support continu et une optimisation après le lancement</p>
+                </div>
+                
               </div>
             </div>
 
@@ -150,7 +174,7 @@ const ContactUs = () => {
                   Quelle est votre disponibilité actuelle ?
                 </AccordionTrigger>
                 <AccordionContent className="text-slate-600">
-                  Je suis actuellement disponible pour de nouveaux projets à partir du mois prochain. Je travaille généralement avec 3-4 clients à la fois pour assurer un service de qualité.
+                Nous acceptons actuellement de nouveaux projets avec un délai d&apos;intégration de 1 à 2 semaines
                 </AccordionContent>
               </AccordionItem>
 
@@ -159,8 +183,7 @@ const ContactUs = () => {
                   Comment travaillez-vous avec les clients ?
                 </AccordionTrigger>
                 <AccordionContent className="text-slate-600">
-                  Je commence par une analyse approfondie de vos performances SEO actuelles, puis je développe une stratégie personnalisée. Nous aurons des points de contrôle réguliers pour examiner les progrès et ajuster si nécessaire.
-                </AccordionContent>
+                Nous commençons par un appel de découverte, créons un plan de projet détaillé, puis travaillons en sprints agiles avec des mises à jour régulières                </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="after-submit">
@@ -168,7 +191,7 @@ const ContactUs = () => {
                   Que se passe-t-il après la soumission ?
                 </AccordionTrigger>
                 <AccordionContent className="text-slate-600">
-                  Je vais examiner vos informations et vous répondrai dans les 24 à 48 heures pour planifier un premier appel de consultation où nous pourrons discuter de vos besoins plus en détail.
+                → Vous recevrez une réponse dans les 24 heures pour planifier une consultation initiale
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

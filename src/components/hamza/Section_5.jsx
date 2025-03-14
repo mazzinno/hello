@@ -9,7 +9,7 @@ function Section5() {
         });
       }, []);
     return (
-        <section className="w-full py-20 bg-white">
+        <section className="w-full py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-100">
             <div className="max-w-[1200px] mx-auto px-4">
                 <div className="flex flex-col md:flex-row gap-12 items-center">
                     {/* Mobile Text - Top */}

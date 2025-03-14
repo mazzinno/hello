@@ -15,7 +15,7 @@ function Section6() {
       }, []);
     return (
         <section 
-            className="w-full h-[600px] bg-cover bg-left relative" 
+            className="w-full h-[600px] bg-cover bg-left relative bg-gradient-to-br from-blue-50 via-purple-50 to-indigo-100" 
             style={{ backgroundImage: "url('src/assets/developers.jpg')" }}
         >
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40"></div>

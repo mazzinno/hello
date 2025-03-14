@@ -62,7 +62,7 @@ const Navbar = () => {
           <Button 
             variant="outline" 
             onClick={() => navigate('/contact')}
-            className="font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-500 border-transparent shadow-lg hover:from-indigo-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-indigo-500/50 px-6 py-4 text-lg"
+            className="font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-500 border-transparent shadow-lg hover:from-indigo-600 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 hover:shadow-indigo-500/50 px-6 py-5 text-lg"
           >
             Contactez-nous
           </Button>
